@@ -1,10 +1,10 @@
 from flask import Flask
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return " اهلا وسهلا بك في معلومات حولي اسمي تسنيم واحب قراءه الكتب واستطيع اكمال كتاب كامل خلال ثلاث ايام واحب البرمجه وايضا شجاعه واحب تجربه اشياء جديدة حتى اذا كنت خائفه!"
+    return "Hello from Azure Web App!"
 
-if _name_ == 'main':
+if __name__ == '_main_':
     app.run()
